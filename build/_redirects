@@ -1,0 +1,28 @@
+# Redirects for your React application
+/                        /SignInSide
+/SignInSide              /SignInSide
+/SignUp                   /SignUp
+/NetworkError           /NetworkError
+/Error401                  /Error401
+/Error500                  /Error500
+/ForgotPassword       /ForgotPassword
+/SentCode                 /SentCode
+/SentCode/:data       /SentCode/:data
+/Dashboard               /Dashboard
+/Dashboard/:user      /Dashboard/:user
+/ChangeCredentials/:data   /ChangeCredentials/:data
+/SocialMediaList       /SocialMediaList
+/SelectedMovie         /SelectedMovie
+/SelectedMovie/:movie_id  /SelectedMovie/:movie_id
+/SelectedMovie/:movie_id/:user  /SelectedMovie/:movie_id/:user
+/SelectedShow         /SelectedShow
+/SelectedShow/:movie_id   /SelectedShow/:movie_id
+/SelectedShow/:movie_id/:user   /SelectedShow/:movie_id/:user
+/Results                   /Results
+/Results/:search       /Results/:search
+/Results/:search/:user  /Results/:search/:user
+/PlayMovie               /PlayMovie
+/PlayMovie/:search      /PlayMovie/:search
+
+# Redirect for all other paths to Error404 page
+/*                        /Error404

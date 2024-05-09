@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.797a724e.css",
+    "main.js": "/static/js/main.fa34abba.js",
+    "static/js/453.85ce1509.chunk.js": "/static/js/453.85ce1509.chunk.js",
+    "static/media/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg": "/static/media/felix-mooneeram-evlkOfkQ5rE-unsplash.d9dab80fe4b0ef73656b.jpg",
+    "static/media/favicon.png": "/static/media/favicon.27b02e23f0e18debe85e.png",
+    "index.html": "/index.html",
+    "main.797a724e.css.map": "/static/css/main.797a724e.css.map",
+    "main.fa34abba.js.map": "/static/js/main.fa34abba.js.map",
+    "453.85ce1509.chunk.js.map": "/static/js/453.85ce1509.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.797a724e.css",
+    "static/js/main.fa34abba.js"
+  ]
+}
