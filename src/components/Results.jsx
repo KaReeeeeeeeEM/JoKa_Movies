@@ -161,7 +161,8 @@ export default function Dashboard() {
           console.log(`Search completed with total pages ${searchResults.data.total_pages}`);
         }
       } catch (error) {
-        window.location.href = "http://localhost:3000/NetworkError";
+        window.location.href = "/NetworkError"                    
+  ;
         console.error("Error fetching movies:", error);
       } finally {
         setLoading(false);
