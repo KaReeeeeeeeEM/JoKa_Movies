@@ -39,7 +39,7 @@ app.use(passport.session()); // If using sessions
 //function to generate a six-digit code
 
 app.get("/", (req, res) => {
-  res.redirect("https://joka-movies.onrender.com:3000/"                    
+  res.redirect("HELLO"                    
                       
   );
 });
