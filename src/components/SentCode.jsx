@@ -56,7 +56,7 @@ let SentCode = (event) => {
 
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/verify-code/${codeSent}`,
+        `https://joka-movies.onrender.com/api/verify-code/${codeSent}`,
         { code, phoneNumber: receivedPhone }
       );
       setErrorMessage(""); // Clear error message
