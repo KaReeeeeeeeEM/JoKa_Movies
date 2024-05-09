@@ -1,1 +1,18 @@
+# Redirects for React routes
+/sign-in-side/*   /SignInSide
+/sign-up/*        /SignUp
+/sent-code/*      /SentCode
+/forgot-password/*  /ForgotPassword
+/change-credentials/*  /ChangeCredentials
+/social-media-list/*  /SocialMediaList
+/selected-movie/*  /SelectedMovie
+/selected-show/*   /SelectedShow
+/logo/*            /Logo
+/results/*         /Results
+/play-movie/*      /PlayMovie
+/dashboard/*       /Dashboard
+/network-error/*   /NetworkError
+/error-401/*       /Error401
+/error-404/*       /Error404
+/error-500/*       /Error500
 
