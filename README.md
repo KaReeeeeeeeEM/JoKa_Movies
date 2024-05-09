@@ -1,0 +1,1 @@
+A platform made for movie lovers, everything you need in one place, movie lists, searches as well as a JoKa Movie Bot Assistant to guide you to getting the right picks. So grab your popcorn and enjoy.
