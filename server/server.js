@@ -39,8 +39,7 @@ app.use(passport.session()); // If using sessions
 //function to generate a six-digit code
 
 app.get("/", (req, res) => {
-  res.send("HELLO"                    
-                      
+  res.redirect('https://joka-movies-frontend.onrender.com/SignInSide'
   );
 });
 
