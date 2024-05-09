@@ -58,7 +58,9 @@ let ChangeCredentials = () => {
       setErrorMessage(""); // Clear error message
       try {
         const response = await axios.post(
-          "http://localhost:5000/change-password",
+          "https://joka-movies.onrender.com/change-password"                    
+                      
+  ,
           { formInfo }
         );
         setErrorMessage(""); // Clear error message
