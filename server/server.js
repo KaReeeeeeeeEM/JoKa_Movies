@@ -257,4 +257,4 @@ app.get("/logout", (req, res) => {
 });
 
 const PORT = process.env.PORT_NO;
-app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
+app.listen(10000, () => console.log(`Server listening on port ${PORT}`));
