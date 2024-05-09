@@ -39,7 +39,9 @@ app.use(passport.session()); // If using sessions
 //function to generate a six-digit code
 
 app.get("/", (req, res) => {
-  res.redirect("http://localhost:3000/");
+  res.redirect("https://joka-movies.onrender.com:3000/"                    
+                      
+  );
 });
 
 app.get("/api", (req, res) => {
@@ -76,7 +78,8 @@ app.post("/api/submit-form", async (req, res) => {
     res.status(200).send({
       success: true,
       message: "Data saved successfully",
-      redirectTo: "http://localhost:3000/Dashboard",
+      redirectTo: "https://joka-movies.onrender.com:3000/Dashboard"                    
+  ,
     });
     //res.redirect('http://localhost:3000/Dashboard');
   } catch (err) {
@@ -109,7 +112,9 @@ app.post("/api/login", async (req, res) => {
     }
 
     // Login successful, send response (replace with your desired data)
-    res.send({ message: "Login successful!", user: { user }, redirectTo:`http://localhost:3000/Dashboard/${user.displayName}?profile=${user.profilePic}` }); // Consider security implications of sending user data
+    res.send({ message: "Login successful!", user: { user }, redirectTo:`https://joka-movies.onrender.com:3000/Dashboard/                                        
+  
+  ${user.displayName}?profile=${user.profilePic}` }); // Consider security implications of sending user data
 
   } catch (error) {
     console.error("Error during login:", error);
@@ -212,7 +217,9 @@ app.post('/change-password', async (req,res) => {
     
         // Send success response and redirect (optional)
         res.status(200).send({ success: true, message: 'Password updated successfully' });
-        res.redirect(`http://localhost:3000/SignInSide`); // Uncomment to redirect to SignInSide
+        res.redirect(`https://joka-movies.onrender.com:3000/SignInSide`                    
+                      
+  ); // Uncomment to redirect to SignInSide
       } catch (error) {
         console.error(error);
         res.status(500).send({ success: false, error: 'Failed to update password' });
@@ -231,7 +238,8 @@ app.get(
   passport.authenticate("google", { failureRedirect: "/" }),
   (req, res) => {
     res.redirect(
-      `http://localhost:3000/Dashboard/${req.user.displayName}?profile=${req.user.profilePic}`
+      `https://joka-movies.onrender.com:3000/Dashboard/                    
+  ${req.user.displayName}?profile=${req.user.profilePic}`
     ); // Redirect to dashboard or home page
   }
 );
