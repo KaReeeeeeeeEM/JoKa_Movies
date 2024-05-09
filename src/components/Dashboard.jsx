@@ -165,7 +165,9 @@ export default function Dashboard() {
           );
         }
       } catch (error) {
-        window.location.href = "http://localhost:3000/NetworkError";
+        window.location.href = "/NetworkError"                    
+                      
+  ;
         console.error("Error fetching movies:", error);
       } finally {
         setTimeout(() => setLoading(false), 10000);
@@ -240,7 +242,10 @@ export default function Dashboard() {
                     {popularMovies.map((movie) => (
                       <Link
                         sx={{ textDecoration: "none" }}
-                        href={`http://localhost:3000/SelectedMovie/${movie.id}/${user}?profile=${profile}&related=${movie.original_title|| movie.original_title}`}
+                        href={`/SelectedMovie/                                                            
+  
+  
+  ${movie.id}/${user}?profile=${profile}&related=${movie.original_title|| movie.original_title}`}
                       >
                         <Card
                           key={movie.id}
@@ -278,7 +283,8 @@ export default function Dashboard() {
                     {trendingMovies.map((movie) => (
                       <Link
                         sx={{ textDecoration: "none" }}
-                        href={`http://localhost:3000/SelectedMovie/${movie.id}/${user}?profile=${profile}&related=${movie.original_title || movie.original_title}`}
+                        href={`/SelectedMovie/                    
+  ${movie.id}/${user}?profile=${profile}&related=${movie.original_title || movie.original_title}`}
                       >
                         <Card
                           key={movie.id}
@@ -324,7 +330,8 @@ export default function Dashboard() {
                     {upcomingMovies.map((movie) => (
                       <Link
                         sx={{ textDecoration: "none" }}
-                        href={`http://localhost:3000/SelectedMovie/${movie.id}/${user}?profile=${profile}&related=${ movie.original_title || movie.original_title}`}
+                        href={`/SelectedMovie/                    
+  ${movie.id}/${user}?profile=${profile}&related=${ movie.original_title || movie.original_title}`}
                       >
                         <Card
                           key={movie.id}
