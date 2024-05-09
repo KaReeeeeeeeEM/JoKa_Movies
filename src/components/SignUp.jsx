@@ -138,7 +138,8 @@ if(formInfo.email && formInfo.password && formInfo.phone && formInfo.confirm){
       try {
         setIsClicked(true);
         const response = await axios.post(
-          "http://localhost:5000/api/submit-form",
+          "https://joka-movies.onrender.com/api/submit-form"                   
+  ,
           { formInfo }
         );
         if (response.status === 200) {
