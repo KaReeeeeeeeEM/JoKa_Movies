@@ -48,7 +48,9 @@ let ForgotPassword = () => {
     setLoading(true); //activate the spinner
 
     try {
-      const response = await axios.post("http://localhost:5000/api/send-code", { phoneNumber });
+      const response = await axios.post("https://joka-movies.onrender.com/api/send-code"                    
+                      
+  , { phoneNumber });
       setErrorMessage(""); // Clear error message
       
       if (response && (response.status === 200 || response.status === 201)) {
