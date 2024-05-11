@@ -39,7 +39,7 @@ app.use(passport.session()); // If using sessions
 //function to generate a six-digit code
 
 app.get("/", (req, res) => {
-  res.redirect('https://joka-movies-frontend.onrender.com/SignInSide'
+  res.redirect('https://jo-ka-movies-client.vercel.app/SignInSide'
   );
 });
 
@@ -77,7 +77,7 @@ app.post("/api/submit-form", async (req, res) => {
     res.status(200).send({
       success: true,
       message: "Data saved successfully",
-      redirectTo: "https://joka-movies.onrender.com:3000/Dashboard"                    
+      redirectTo: "https://jo-ka-movies-client.vercel.app/Dashboard"                    
   ,
     });
     //res.redirect('http://localhost:3000/Dashboard');
@@ -111,7 +111,7 @@ app.post("/api/login", async (req, res) => {
     }
 
     // Login successful, send response (replace with your desired data)
-    res.send({ message: "Login successful!", user: { user }, redirectTo:`https://joka-movies.onrender.com:3000/Dashboard/                                        
+    res.send({ message: "Login successful!", user: { user }, redirectTo:`https://jo-ka-movies-client.vercel.app/Dashboard/                                        
   
   ${user.displayName}?profile=${user.profilePic}` }); // Consider security implications of sending user data
 
@@ -216,7 +216,7 @@ app.post('/change-password', async (req,res) => {
     
         // Send success response and redirect (optional)
         res.status(200).send({ success: true, message: 'Password updated successfully' });
-        res.redirect(`https://joka-movies.onrender.com:3000/SignInSide`                    
+        res.redirect(`https://jo-ka-movies-client.vercel.app/SignInSide`                    
                       
   ); // Uncomment to redirect to SignInSide
       } catch (error) {
@@ -237,7 +237,7 @@ app.get(
   passport.authenticate("google", { failureRedirect: "/" }),
   (req, res) => {
     res.redirect(
-      `https://joka-movies.onrender.com:3000/Dashboard/                    
+      `https://jo-ka-movies-client.vercel.app/Dashboard/                    
   ${req.user.displayName}?profile=${req.user.profilePic}`
     ); // Redirect to dashboard or home page
   }
